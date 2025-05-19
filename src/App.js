@@ -1,5 +1,6 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaWhatsapp, FaFreebsd } from "react-icons/fa";
+import { SiFiverr } from "react-icons/si";
 
 function App() {
   return (
@@ -207,22 +208,42 @@ function App() {
       <section id="contact" className="py-20 px-4 bg-[#0c1118]">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-8">Get in Touch</h2>
-          <div className="flex justify-center space-x-6 mb-8">
+          <div className="flex justify-center items-center space-x-8 mb-8">
             <a
               href="https://www.linkedin.com/in/zaki-zakaria-2684211a3/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#4ecca3] hover:text-white transition-colors"
+              className="text-[#4ecca3] hover:text-white transition-colors group"
+              aria-label="LinkedIn Profile"
             >
-              <FaLinkedin className="text-3xl" />
+              <FaLinkedin className="text-3xl transform transition-transform group-hover:scale-110" />
             </a>
             <a
               href="https://github.com/zakiiizakaria"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#4ecca3] hover:text-white transition-colors"
+              className="text-[#4ecca3] hover:text-white transition-colors group"
+              aria-label="GitHub Profile"
             >
-              <FaGithub className="text-3xl" />
+              <FaGithub className="text-3xl transform transition-transform group-hover:scale-110" />
+            </a>
+            <a
+              href="https://www.fiverr.com/s/NNV6X5N"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#4ecca3] hover:text-white transition-colors group"
+              aria-label="Fiverr Profile"
+            >
+              <SiFiverr className="text-3xl transform transition-transform group-hover:scale-110" />
+            </a>
+            <a
+              href="https://www.freelancer.com/u/ZakiZakaria97?sb=t"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#4ecca3] hover:text-white transition-colors group"
+              aria-label="Freelancer Profile"
+            >
+              <FaFreebsd className="text-3xl transform transition-transform group-hover:scale-110" />
             </a>
           </div>
         </div>
