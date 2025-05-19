@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaDownload, FaPlay } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 function App() {
   return (
@@ -83,10 +83,15 @@ function App() {
               building robust and scalable applications.
             </p>
             <div className="flex space-x-4 opacity-0 animate-fade-in-up [animation-delay:500ms]">
-              <button className="bg-[#4ecca3] text-[#0a0f16] px-6 py-3 rounded-md flex items-center space-x-2 hover:bg-[#3da88a] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(78,204,163,0.5)]">
-                <FaDownload className="animate-bounce" />
-                <span>Download CV</span>
-              </button>
+              <a 
+                href="https://wa.me/601123239762" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#4ecca3] text-[#0a0f16] px-6 py-3 rounded-md flex items-center space-x-2 hover:bg-[#3da88a] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(78,204,163,0.5)]"
+              >
+                <FaWhatsapp className="animate-bounce text-xl" />
+                <span>Contact Me</span>
+              </a>
             </div>
           </div>
           <div className="md:w-1/2 relative flex justify-center">
