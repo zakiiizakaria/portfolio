@@ -156,62 +156,44 @@ function App() {
       {/* Experience Section */}
       <section id="experience" className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-[#4ecca3] text-xl mb-4">EDUCATION & SKILL</h2>
-          <h3 className="text-4xl font-bold text-white mb-12">
-            Showcasing your talent
-            <br />
-            amplifying your impact
+          <h2 className="text-[#4ecca3] text-xl mb-4 text-center">MY EXPERTISE</h2>
+          <h3 className="text-4xl font-bold text-white mb-16 text-center">
+            Professional Skillset
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="space-y-8">
-              {[
-                {
-                  period: "2021 - 2025",
-                  title: "Software Developer",
-                  description:
-                    "Full-stack development with modern technologies",
-                },
-                {
-                  period: "2019 - 2021",
-                  title: "Frontend Developer",
-                  description: "Specialized in React and Angular development",
-                },
-              ].map((exp) => (
-                <div
-                  key={exp.period}
-                  className="border border-[#4ecca3]/20 p-6 rounded-xl"
-                >
-                  <div className="text-[#4ecca3] text-sm mb-2">
-                    {exp.period}
+          <div className="max-w-3xl mx-auto space-y-8">
+            {[
+              { skill: "Angular", level: 95, description: "Enterprise-grade web applications" },
+              { skill: "React Next.js", level: 90, description: "Modern web development" },
+              { skill: ".NET", level: 85, description: "Backend development" },
+              { skill: "Laravel", level: 88, description: "PHP framework" },
+              { skill: "Node.js", level: 92, description: "Server-side JavaScript" },
+            ].map((skill, index) => (
+              <div key={skill.skill} className="opacity-0 animate-fade-in" style={{ animationDelay: `${index * 200}ms` }}>
+                <div className="flex justify-between items-center text-white mb-2">
+                  <div>
+                    <span className="text-xl font-bold">{skill.skill}</span>
+                    <span className="text-sm text-gray-400 ml-2">/ {skill.description}</span>
                   </div>
-                  <h4 className="text-white text-xl font-bold mb-2">
-                    {exp.title}
-                  </h4>
-                  <p className="text-gray-400">{exp.description}</p>
+                  <span className="text-[#4ecca3]">{skill.level}%</span>
                 </div>
-              ))}
-            </div>
-            <div className="space-y-6">
-              {[
-                { skill: "JavaScript", level: 90 },
-                { skill: "React", level: 85 },
-                { skill: "Node.js", level: 80 },
-                { skill: "Laravel", level: 75 },
-              ].map((skill) => (
-                <div key={skill.skill}>
-                  <div className="flex justify-between text-white mb-2">
-                    <span>{skill.skill}</span>
-                    <span>{skill.level}%</span>
-                  </div>
-                  <div className="h-2 bg-[#1a1f26] rounded-full">
-                    <div
-                      className="h-full bg-[#4ecca3] rounded-full"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
+                <div className="h-3 bg-[#1a1f26] rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-gradient-to-r from-[#4ecca3]/80 to-[#4ecca3] rounded-full transform origin-left animate-scale-x"
+                    style={{ 
+                      width: `${skill.level}%`,
+                      animationDelay: `${index * 200 + 400}ms`
+                    }}
+                  >
+                    <div className="absolute top-0 right-0 bottom-0 w-8 animate-shimmer" 
+                         style={{ 
+                           background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent)',
+                           animationDelay: `${index * 200 + 800}ms`
+                         }}>
+                    </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -238,9 +220,6 @@ function App() {
               <FaGithub className="text-3xl" />
             </a>
           </div>
-          <button className="bg-[#4ecca3] text-[#0a0f16] px-8 py-3 rounded-md hover:bg-[#3da88a] transition-colors">
-            Contact Me
-          </button>
         </div>
       </section>
 

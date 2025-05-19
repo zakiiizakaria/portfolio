@@ -24,6 +24,8 @@ module.exports = {  content: [
         'glow': 'glow 2s ease-in-out infinite alternate',
         'slide-up': 'slideUp 0.7s ease-out forwards',
         'text-shimmer': 'textShimmer 2.5s ease infinite',
+        'scale-x': 'scaleX 1s ease-out forwards',
+        'shimmer': 'shimmer 2s infinite',
       },
       keyframes: {
         fadeIn: {
@@ -54,6 +56,13 @@ module.exports = {  content: [
           '0%': { backgroundPosition: '-200% center' },
           '100%': { backgroundPosition: '200% center' },
         },
+        scaleX: {
+          '0%': { transform: 'scaleX(0)' },
+          '100%': { transform: 'scaleX(1)' },
+        },
+        shimmer: {
+          '100%': { transform: 'translateX(100%)' },
+        }
       },
     },
   },
