@@ -213,37 +213,49 @@ function App() {
               href="https://www.linkedin.com/in/zaki-zakaria-2684211a3/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#4ecca3] hover:text-white transition-colors group"
+              className="text-[#4ecca3] hover:text-white transition-colors group relative"
               aria-label="LinkedIn Profile"
             >
               <FaLinkedin className="text-3xl transform transition-transform group-hover:scale-110" />
+              <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#0a0f16] text-[#4ecca3] px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 border border-[#4ecca3]/20 whitespace-nowrap">
+                LinkedIn
+              </span>
             </a>
             <a
               href="https://github.com/zakiiizakaria"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#4ecca3] hover:text-white transition-colors group"
+              className="text-[#4ecca3] hover:text-white transition-colors group relative"
               aria-label="GitHub Profile"
             >
               <FaGithub className="text-3xl transform transition-transform group-hover:scale-110" />
+              <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#0a0f16] text-[#4ecca3] px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 border border-[#4ecca3]/20 whitespace-nowrap">
+                GitHub
+              </span>
             </a>
             <a
               href="https://www.fiverr.com/s/NNV6X5N"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#4ecca3] hover:text-white transition-colors group"
+              className="text-[#4ecca3] hover:text-white transition-colors group relative"
               aria-label="Fiverr Profile"
             >
               <SiFiverr className="text-3xl transform transition-transform group-hover:scale-110" />
+              <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#0a0f16] text-[#4ecca3] px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 border border-[#4ecca3]/20 whitespace-nowrap">
+                Fiverr
+              </span>
             </a>
             <a
               href="https://www.freelancer.com/u/ZakiZakaria97?sb=t"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#4ecca3] hover:text-white transition-colors group"
+              className="text-[#4ecca3] hover:text-white transition-colors group relative"
               aria-label="Freelancer Profile"
             >
               <FaFreebsd className="text-3xl transform transition-transform group-hover:scale-110" />
+              <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#0a0f16] text-[#4ecca3] px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 border border-[#4ecca3]/20 whitespace-nowrap">
+                Freelancer
+              </span>
             </a>
           </div>
         </div>
