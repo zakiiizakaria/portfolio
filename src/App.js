@@ -16,33 +16,31 @@ function App() {
           <div className="hidden md:flex space-x-8">
             <a
               href="#home"
-              className="text-white hover:text-[#4ecca3] transition-colors"
+              className="text-white hover:text-[#4ecca3] transition-colors relative group"
             >
               HOME
-            </a>
-            <a
-              href="#about"
-              className="text-white hover:text-[#4ecca3] transition-colors"
-            >
-              ABOUT
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4ecca3] transition-all duration-300 group-hover:w-full"></span>
             </a>
             <a
               href="#services"
-              className="text-white hover:text-[#4ecca3] transition-colors"
+              className="text-white hover:text-[#4ecca3] transition-colors relative group"
             >
               SERVICES
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4ecca3] transition-all duration-300 group-hover:w-full"></span>
             </a>
             <a
-              href="#projects"
-              className="text-white hover:text-[#4ecca3] transition-colors"
+              href="#experience"
+              className="text-white hover:text-[#4ecca3] transition-colors relative group"
             >
-              PROJECTS
+              EXPERTISE
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4ecca3] transition-all duration-300 group-hover:w-full"></span>
             </a>
             <a
               href="#contact"
-              className="text-white hover:text-[#4ecca3] transition-colors"
+              className="text-white hover:text-[#4ecca3] transition-colors relative group"
             >
               CONTACT
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4ecca3] transition-all duration-300 group-hover:w-full"></span>
             </a>
           </div>
           <button className="md:hidden text-white">
@@ -265,7 +263,7 @@ function App() {
       <footer className="bg-[#0a0f16] text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p>
-            &copy; {new Date().getFullYear()} Zaki Zakaria. All rights reserved.
+            &copy; {new Date().getFullYear()} Mayaniaga. All rights reserved.
           </p>
         </div>
       </footer>
